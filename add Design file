@@ -1,0 +1,69 @@
+                               Test design technic by https://qauto2.forstudy.space button "Sign up"
+
+     Registration page
+
+     Equivalence classes:
+
+     Line "Name":
+- Latin symbols: from 2 to 20 symbols - correct data.
+- Cyrillic: from 2 to 20 symbols - name is invalid.
+- Numbers: from 2 to 20 symbols - name is invalid.
+- Special characters: from 2 to 20 symbols - name is invalid.
+
+     Line "Last name":
+- Latin symbols: from 2 to 20 symbols - corret data.
+- Cyrillic: from 2 to 20 symbols - last name is invalid.
+- Numbers: from 2 to 20 symbols - last name is invalid.
+- Special characters: from 2 to 20 symbols - last name is invalid.
+
+    Line "E-mail":
+- Latin symbols: before domain - correct data (but before domain, you can enter endless number of characters????).
+- Cyrillic: before domain - E-mail incorrect.
+- Numbers:  before domain - E-mail incorrect.
+- Special characters: before domain - E-mail incorrect.
+
+    Line "Password":
+- Latin symbols: if follow to requirements in Password line (Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter) - correct data.
+- Cyrillic: incorrect data.
+- Numbers: incorrect data.
+- Special characters: incorrect data.
+
+   Line "Re-enter Password":
+- Latin symbols: if follow to requirements in Password line (Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter) - correct data.
+- Cyrillic: incorrect data.
+- Numbers: incorrect data.
+- Special characters: incorrect data.
+
+
+    Limit values:
+
+    Line "Name":
+- Positive test: 3, 19 symbols.
+- Negative test: 1, 21 symbols.
+
+    Line "Last name":
+- Positive test: 3, 19 symbols.
+- Negative test: 1, 21 symbols.
+
+Line "E-mail":
+- Positive test: 2 symbols, endless number of Latin characters???? (before domain).
+- Negative test: 1 symbol, endless number of Latin characters???? (before domain).
+
+   Line "Password":
+- Latin symbols: if follow to requirements in Password line (Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter) - correct data.
+- Cyrillic: incorrect data.
+- Numbers: correct data.
+- Special characters: correct data.
+
+Line "Re-enter Password":
+- Latin symbols: if follow to requirements in Password line (Password has to be from 8 to 15 characters long and contain at least one integer, one capital, and one small letter) - correct data.
+- Cyrillic: incorrect data.
+- Numbers: correct data.
+- Special characters: correct data.
+
+    Characters it accepts registration:
+- Line "Name": from 2 to 20 symbols Latin symbols.
+- Line "Last name": from 2 to 20 symbols Latin symbols.
+- Line "E-mail": from 1 to endless number of Latin characters???? (before domain).
+- Line "Password": from 8 to 15 characters long and contain at least one integer, one capital, and one small letter.
+- Line "Re-enter Password": from 8 to 15 characters long and contain at least one integer, one capital, and one small letter.
